@@ -35,11 +35,10 @@ $("#tela").on('click', function () {
 });
 
 
+document.getElementById("geolocalizacao").addEventListener("click", geolocaliza);
 
-function geolocalizacao() {
-
-  let btnGeolo = document.getElementById("geoloc");
-  btnGeolo.addEventListener('click', geol);
+function geolocaliza() { 
+  
 
   if ('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition(function (position) {
