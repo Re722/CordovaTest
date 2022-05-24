@@ -46,13 +46,13 @@ function geolocaliza() {
     }, function (error) {
       console.log(error)
     })
-    const watcher = navigator.geolocation.watchPosition(function (position) {
+    /*const watcher = navigator.geolocation.watchPosition(function (position) {
       console.log(position)
     }, function (error) {
       console.log(error)
     }, { enableHighAccuracy: true, maximumAge: 3000, timeout: 3000 },
       navigator.geolocation.clearWatch(watcher)
-    )
+    )*/
   } else {
     alert('ops.., não foi possivel pegar a localização!!')
   }
