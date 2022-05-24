@@ -58,17 +58,5 @@ function geolocaliza() {
   }
 }
 
-view.prototype.loadBottomBar = function()
-{
-    const bottomBar = CE('div','bottom-bar');
-
-    const btnInfo = CE('a','btn-info');
-    btnInfo.append(CE('img').attr({ 'src' : '/home/renaldo/Área de trabalho/Meuapp/www/img/logo.png'}));
-    //btnInfo.attr({'href' : '#/applider/ead_tutorial/stage'});
-    bottomBar.append(btnInfo);
-
-    this.container.append(bottomBar);
-}
-
 
 
